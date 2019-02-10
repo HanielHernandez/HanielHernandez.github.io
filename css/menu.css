@@ -1,0 +1,36 @@
+.menu-btn{
+    position: fixed;
+width: 48px;
+height: 48px;
+background: linear-gradient(-45deg,#2079d2,#6fb7b9);
+box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.6);
+border-radius: 10px;
+z-index: 3;
+padding: 12px;
+top: 1em;
+right:1em;
+visibility: hidden;
+}
+@media only screen and (max-width: 600px) {
+    .menu-btn{
+    visibility: visible;
+    }
+}
+.btn-line{
+    height: 3px;
+    margin-top: 3px;
+    width: 100%;
+    border-radius: 500px;
+    background-color: #ffffff;
+    transition: 0.3s;
+}
+.line-erased{
+    visibility: hidden;
+    opacity: 0;
+}
+.line-left{
+    transform: rotate(45deg) translate(5px, 5px);
+}
+.line-right{
+    transform: rotate( -45deg) translate(4px,-3px)
+}
