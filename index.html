@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/grid.css">
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -17,8 +17,6 @@
         <div class="btn-line "></div>
         <div class="btn-line "></div>
         <div class="btn-line  "></div>
-
-
     </div>
     <div  id="responsive-menu" class="menu-close">
         <ul id="menu">
@@ -28,20 +26,19 @@
                 <li class="nav-item"><a href="#about">Contact me</a></li>
         </ul>
     </div>
-   
-        <nav >
-            <ul id="normal-menu">
+        <nav id="normal-menu">
+            <ul >
                 <li class="nav-item"><a class="link" href="#home">About me</a></li>
                 <li class="nav-item"><a class="link">Skills</a></li>
                 <li class="nav-item"><a class="link">Projects</a></li>
                 <li class="nav-item"><a class="link">Contact me</a></li>
                 <!-- <li class="menu" id="menu-button"><i class="fas fa-bars" style="font-size:35px"></i></li> -->
             </ul>
-           
         </nav>    
-        <div class="container">
-            <div class="hero-section">
-                <div class="col-6 hero-image">
+        <!-- Hero section -->
+        <div class="section">
+            <div class="container hero-section">
+                    <div class="col-6 hero-image">
                             <img src="assets/images/hero_logo.svg" width="100%" alt="">
                 </div>
                 <div class="col-6">
@@ -50,93 +47,104 @@
                         <h2>A Web Developer</h2>
                         <a href="" class="cta-button">CONTACT ME</a>
                 </div>
-                
             </div>
-            <div class="row">
-                <i class="material-icons">arrow_down</i>
-                <p></p>
-            </div>
-            <div class="row about-me-section" style="display:inline-block">
-                <div class="col-6" >
-                    <h1>About me</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus et fugit impedit velit omnis
-                         iusto repellat eaque autem iste aliquam
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ipsa provident error harum repellat, 
-                        facere natus sequi dicta vel est ad dolore blanditiis quod nihil quisquam temporibus iste ab magni.
-                    </p>
-                    <a href="" class="cta-button">RESUME</a>
-                </div>
-                <div class="col-6" >
-                    <img src="http://lorempixel.com/288/288/" alt="myphoto" class="my-photo">
-                </div>
-            </div>
-            <div class="row about-me-section">
-                <div class="col-6" >
-                    <img src="assets/images/uca_logo.png" style="margin: 0px auto; display: block" alt="algo">
-                    <p style="text-align: center">Lorem ipsum dolor sit </p>
-                </div>
-                <div class="col-6">
-                    <img src="assets/images/ieep_logo.png" style="margin: 0px auto;" alt="algo">
-                    <p style="text-align: center">Lorem ipsum dolor sit </p>
-                </div>
-            </div>
-            <!-- <div class="row skills-section">
-                <h1>Skills and Tecnologies</h1>
-                <div class="col-3" style="display:block">
-                    <img src="http://lorempixel.com/75/75/"  style="margin:0 auto; display: block" alt="alt algo" >  
-                    <p style="text-align:center;">Algo</p>
-                </div>
-            </div>
-            <div class="row">
-                <h1>Projects</h1>
-                <div class="col-3" style="display:block">
-                    <img src="http://lorempixel.com/75/75/"  style="margin:0 auto; display: block" alt="alt algo" >  
-                    <p style="text-align:center;">Algo</p>
-                </div>
-            </div> -->
         </div>
-        <div style="width:100%; height:100%; background-color:#fff; color: #707070; padding:  4em 0em;">
-            <div class="sub-container">
-                <h1>Skills and Tecnologies</h1>
+      
+        <!-- about-me -->
+        <div class="section about-me-section">
+            <div class="container">
                 <div class="row">
-
+                    <div class="col-6" style="float:right" >
+                            <img src="assets/images/my_photo.PNG" alt="myphoto" class="my-photo">
+                    </div>
+                    <div class="col-6"  style="float:right">
+                        <h1>About me</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus et fugit impedit velit omnis
+                                iusto repellat eaque autem iste aliquam
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ipsa provident error harum repellat, 
+                            facere natus sequi dicta vel est ad dolore blanditiis quod nihil quisquam temporibus iste ab magni.
+                        </p>
+                        <a href="" class="cta-button">RESUME</a>
+                    </div>
                 </div>
-                <div class="row" id="technologies">
-                    <!-- JAVASCRIPT GOES HERE -->
-                  
-                </div>
-            </div>            
+                <div class="row awards">
+                    <div class="col-6">
+                        <img src="assets/images/uca-logo.png" style="margin: 0px auto; display: block" alt="algo">
+                        <p style="text-align: center">Lorem ipsum dolor sit </p>
+                    </div>
+                    <div class="col-6">
+                        <img src="assets/images/ieepp-logo.png" style="margin: 0px auto; display: block" alt="algo">
+                        <p style="text-align: center">Lorem ipsum dolor sit </p>
+                    </div>
+                </div>         
+            </div>
         </div>
-        <div class="container">
-            <div class="row projects">
-                <h1>Projects</h1>
-                <p>This are some projects I work on</p>
-                <div class="col-4 project">
-                    <img src="http://lorempixel.com/200/100/" style="width: 100%" alt="">
-                    <h3>Invemu</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio adipisci magnam enim nesciunt, quod, distinctio voluptatum est cum ducimus consequuntur consequatur dolor, fugiat quae. Veritatis adipisci vero sint est dolore?</p>
-                    <a href="" class="cta-button">More</a>
-                </div>
-                <div class="col-4 project">
-                        <img src="http://lorempixel.com/200/100/" style="width: 100%" alt="">
-                        <h3>Invemu</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio adipisci magnam enim nesciunt, quod, distinctio voluptatum est cum ducimus consequuntur consequatur dolor, fugiat quae. Veritatis adipisci vero sint est dolore?</p>
-                        <a href="" class="cta-button">More</a>
+        <!-- skills seaction -->
+        <div class="section" style=" background-color:#fff; color: #707070; padding:  2em 0em;">
+                <div class="sub-container">
+                        <h1>Skills and Tecnologies</h1>
+                        <p>This are some of the programing langauges, and tools I know </p>
+                        <div class="row">
+                            <div class="col-2">
+                                <img src="assets/images/android_phone.png" style=" width:100%; display: block" alt="">
+                            </div>
+                            <div class="col-4">
+                                <h3 style="font-weight:500">Android Development</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quia minima, harum repellendus distinctio, 
+                                    suscipit eos nobis excepturi rem nostrum provident! Odit in sunt voluptatum atque? Aut quia voluptas rerum?
+                                </p>
+                            </div>
+                            <div class="col-2">
+                                    <img src="assets/images/android_phone.png" style=" width:100%; display: block" alt="">
+                            </div>
+                            <div class="col-4">
+                                    <h3 style="font-weight:500">Android Development</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quia minima, harum repellendus distinctio, 
+                                        suscipit eos nobis excepturi rem nostrum provident! Odit in sunt voluptatum atque? Aut quia voluptas rerum?
+                                    </p>
+                            </div>
+                          
+                        </div>
+                        <div class="row" id="technologies">
+                            <!-- JAVASCRIPT GOES HERE -->
+                          
+                        </div>
+                    </div> 
+        </div>
+        <!-- projects section -->
+        <div class="section">
+            <div class="container">
+                    <div class="row projects">
+                        <h1>Projects</h1>
+                        <p>This are some projects I work on</p>
+                        <div class="col-4 project">
+                            <img src="http://lorempixel.com/200/100/" style="width: 100%" alt="">
+                            <h3>Invemu</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio adipisci magnam enim nesciunt, quod, distinctio voluptatum est cum ducimus consequuntur consequatur dolor, fugiat quae. Veritatis adipisci vero sint est dolore?</p>
+                            <a href="" class="cta-button">More</a>
+                        </div>
+                        <div class="col-4 project">
+                                <img src="http://lorempixel.com/200/100/" style="width: 100%" alt="">
+                                <h3>Invemu</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio adipisci magnam enim nesciunt, quod, distinctio voluptatum est cum ducimus consequuntur consequatur dolor, fugiat quae. Veritatis adipisci vero sint est dolore?</p>
+                                <a href="" class="cta-button">More</a>
+                        </div>
+                    </div> 
+            </div>
+        </div>
+        <!-- contac-me -->
+        <div class="contact-me">
+                <div class="sub-container">
+                        <h1>Contact me</h1>
+                        <p><a href="mailto:hanielHernandez96@outlook.com"> <i class="material-icons">email</i> HanielHernandez96@outlook.com</a>  </p>
+                        <p><a href=""><i class="fab fa-github"></i> HanielHernandez</a> </p>
+                        <p><a href=""><i class="fab fa-linkedin"></i> likedin.com/in/hanielhernandez</a></p>
+                        <p class="copy-right">Haniel Hernandez <i class="fa fa-copyright" aria-hidden="true"></i>2019</p> 
                     </div>
                 
             </div>
-            
-        </div>
-        <div class="contact-me">
-            <div class="sub-container">
-                    <h1>Contact me</h1>
-                    <p><a href="mailto:hanielHernandez96@outlook.com"> <i class="material-icons">email</i> HanielHernandez96@outlook.com</a>  </p>
-                    <p><a href=""><i class="fab fa-github"></i> HanielHernandez</a> </p>
-                    <p><a href=""><i class="fab fa-linkedin"></i> likedin.com/in/hanielhernandez</a></p>
-                    <p class="copy-right">Haniel Hernandez <i class="fa fa-copyright" aria-hidden="true"></i>2019</p> 
-                </div>
-            
-        </div>
         <script src="node_modules/sal.js/dist/sal.js"></script>
         <script src="js/main.js"></script>
 </body>

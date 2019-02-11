@@ -1,0 +1,369 @@
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+body,html{
+    font-size: 17px;
+    font-family: "Roboto";
+    font-weight: 300;
+    margin: 0px;
+    width: 100%; 
+}
+.background-image{
+    position:absolute; 
+    width: 100%; 
+    top:0; right:0; 
+    z-index: -1;
+}
+.bacground-image::after{
+    content:"";
+    background: #ffffff;
+    height: 75px;
+    width: 75px;
+    transform: skew(-45deg);
+
+}
+body{
+   background: linear-gradient(-45deg, #2079d2 , #1ebcce,#3086c0,#6fb7b9);
+}   
+a{
+    text-decoration: none;
+    display: block
+}
+nav{
+    padding: 2em 3em;
+    width: 100%;
+    position:fixed;
+    z-index:1;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: right;
+    position: relative;
+    right: 0;
+    top: 0;
+    padding: 14px 16px;
+    font-size: 1.1em;
+    text-decoration: none;
+    color: #ffffff; 
+  }
+  li a{
+      color: #ffffff;  
+      display: block;
+      text-decoration: none;
+      text-align: center;
+      margin-bottom: 1em;
+  }
+    li a:hover{
+        display: block;
+        border-bottom: #fff 1px solid;
+ 
+   
+  } 
+
+  h1,h2{
+      font-weight: 300;
+      width: fit-content;
+      
+  }
+  h1{
+    margin: 16px 0px;  
+    font-size: 48px;    
+  }
+  .about-me-section h1, #techonoglies h1, .projects h1, .contact-me h1{
+    border-bottom: 3px solid #ffffff;
+  }
+
+.container{
+    width: 70%;
+    margin: 0px auto;
+}
+.cta-button{
+    background-color: #39A4EB;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    border-radius: 50px;
+    color: white;
+    margin: 16px 0px;;
+    padding: 0.75em 1.30em;
+    font-size: 24px;
+    text-align: center;
+    width: 10em;
+    font-weight: 700;
+}
+.cta-button{
+    border: none;
+}
+.half{
+    width: 50%;
+}
+/* .hero-section{
+    margin-top: 178px;
+    text-align: center;
+} */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+    margin-bottom: 1em;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+  
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+
+.hero-section, .about-me-section{
+    color: white;
+}
+.hero-section h1, .hero-section h2 ,p{
+    text-align: left;
+} 
+ .hero-section div{
+    float: right;
+} 
+.hero-section{
+    padding-top: 175px;
+    height: 75vh;
+    margin-bottom:150px; 
+}
+.about-me-section{
+    margin-bottom: 25px;
+}
+.about-me-section h1{
+    border-bottom: 2px solid;
+}
+
+.about-me-section img{
+    align-items: center;
+    display: block;
+    margin: 16px auto;
+}
+.technologies{
+    transition: 0.3s ease-in-out;
+
+}
+.technologies:hover{
+    background-color: rgb(238, 237, 237);
+    font-weight: 500;
+}
+.tecnologies>  img{
+    display: block;
+    margin:0px auto;
+}
+
+.tecnologies p{
+    width: fit-content;
+    margin: 0px auto;
+    transition: 0.3;
+}
+
+.projects{
+    padding: 3em 0em;
+    color: #fff;
+}
+.project{
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+.project h3{
+    font-family: 'Roboto Regular';
+    font-size: 1.45em;
+    margin: 0.50em 0em;
+}
+.project .cta-button{
+    font-size: 16px;
+}
+.project:hover{
+    background-color:  rgba(0, 0, 0, 0.8);
+}
+.contact-me{
+    background-color: rgba(58, 58, 58, 0.75);
+    color: white;
+    padding: 1em;
+}
+.contact-me a{
+    color: white; 
+    font-size: 24px;
+  display: inline;
+}
+@media only screen and(max-width:1080px){
+    .col-m1 {width: 8.33%;}
+    .col-m2 {width: 16.66%;}
+    .col-m3 {width: 25%;}
+    .col-m4 {width: 33.33%;}
+    .col-m5 {width: 41.66%;}
+    .col-m6 {width: 50%;}
+    .col-m7 {width: 58.33%;}
+    .col-m8 {width: 66.66%;}
+    .col-m9 {width: 75%;}
+    .col-m10 {width: 83.33%;}
+    .col-m11 {width: 91.66%;}
+    .col-m12 {width: 100%;}
+} 
+.formation{
+    color:white;
+    display: inline-block;
+}
+.copy-right{
+    font-size: 14px;
+    margin: 45px 0px;
+}
+.menu{
+    display: none;
+}
+#normal-menu ul li a{
+    box-shadow: 1px 1px black;
+}
+#responsive-menu{
+    position: fixed;
+    display: block;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0,0,0.80);
+    color: white;
+    z-index:1;
+}
+#responsive-menu ul{
+    margin-top: 100px;
+}
+#responsive-menu ul li{
+    display: block;
+    width:100%;
+    
+}
+
+#responsive-menu ul li a{
+    display: block;
+    font-size: 1.25em;
+    margin-bottom: 0px;
+    
+}
+
+@media only screen and (max-width: 850px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 50%;
+    }
+    .technologies{
+        width: 25%;
+    }
+    .container{
+        width: 85%;
+    }
+    .cta-button{
+        display: block;
+        margin: 0px auto;
+    }
+    .hero-image{
+        position: relative;
+        top: 0;
+        left: 0px;
+    }
+
+  }
+  .sub-container{
+    width:70%; margin:0px auto;
+  }
+
+  
+  @media only screen and (max-width: 600px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+    .technologies{
+        width: 50%;
+    }
+    .container{
+        width: 95%;
+    }
+    .sub-container{
+        width: 95%;
+    }
+    nav{
+        padding: 1em;
+    }
+    .nav-item{
+        display: none;
+        
+    }
+    .menu{
+        display: block;
+        background: linear-gradient(-45deg,#2079d2, #3086c0,#6fb7b9);
+        z-index: 2;
+        border-radius: 10px;
+    }
+    .hidden-menu{
+        position: fixed;
+        
+    }
+    .show-menu{
+        color: blue;
+    }
+    .hidden-menu ul{
+        margin-top: 100px;
+    }
+    .hero-section{
+        padding-top: 100px;
+    }
+    h1{
+        font-size: 2em;
+    }
+    h1,h2{
+        margin: 0.4em 0em;
+    }
+    .contact-me a {
+        font-size: 18px;
+    }
+}
+  
+.menu-close{
+    visibility: hidden;
+    transform: translate3d(0,-100%,0);
+    transition: 0.3s;
+    opacity:0;
+ }
+ .menu-open{
+    visibility: visible;
+    transform: translate3d(0,0,0);
+    transition: 0.3s;
+    opacity: 1;
+ }
+   /* animation: fadein 0.3s; */
+ 
+  @keyframes fadein {
+    from{ height: 0%; opacity: 0;}
+    to{height: 100%; opacity: 1}
+    
+}
+@keyframes fadeout{
+    from{height: 100%; opacity: 0.8}
+    to{ height: 0%; opacity: 0;}
+    
+}

@@ -21,8 +21,8 @@ var lines= document.querySelectorAll('.btn-line');
     for(i=0;i<technologies.length;i++){
         var technology=technologies[i];
         var div = document.createElement('div');
-        div.className = 'col-2 technologies';
-        div.innerHTML = "<img src='"+technology.image+"'  style='width:100%; margin:0px auto; display:block;'  alt=''> <p style='text-align: center;'>"+technology.name+"</p>"
+        div.className = 'technology';
+        div.innerHTML = "<img src='"+technology.image+"'    alt=''> <p style='text-align: center;'>"+technology.name+"</p>"
         document.getElementById("technologies").appendChild(div);
         
     }
@@ -50,11 +50,19 @@ var lines= document.querySelectorAll('.btn-line');
         var normalMenu=document.getElementsByClassName('link');
        // normalMenu.st"color: rgb(0,0,0);")
         
-       console.log(window.scrollY);
-       if(Window.scrollY>1507){
-           console.log("cambiar");
-            console.log(normalMenu);
-       }
+     
     })
-    document.get
+    window.onscroll=()=>{
+        const nav = document.getElementById('normal-menu');
+        console.log(this.scrollY);
+        if(this.scrollY >= 135 &&  window.innerWidth>600) {
+                nav.classList.add("dark-menu");
+                nav.style.padding="0.75em 3em";
+        }
+        else{
+            nav.classList.remove("dark-menu");
+            nav.style.padding="2em 3em";
+        };
+        
+    }
     
