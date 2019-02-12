@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="node_modules/sal.js/dist/sal.css">
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -26,7 +27,7 @@
                 <li class="nav-item"><a href="#about">Contact me</a></li>
         </ul>
     </div>
-        <nav id="normal-menu">
+        <nav id="normal-menu" data-sal="slide-down" data-sal-duration="500">
             <ul >
                 <li class="nav-item"><a class="link" href="#home">About me</a></li>
                 <li class="nav-item"><a class="link">Skills</a></li>
@@ -37,11 +38,13 @@
         </nav>    
         <!-- Hero section -->
         <div class="section">
-            <div class="container hero-section">
-                    <div class="col-6 hero-image">
+            <div class="container hero-section" >
+                    <div class="col-6 hero-image" data-sal="slide-left"
+                    data-sal-duration="500"
+                    data-sal-easing="ease-out-bounce">
                             <img src="assets/images/hero_logo.svg" width="100%" alt="">
                 </div>
-                <div class="col-6">
+                <div class="col-6"  data-sal="fade" data-sal-duration="500">
                         <h2>Hi, I am</h2>
                         <h1>Haniel Hernández A.</h1>
                         <h2>A Web Developer</h2>
@@ -54,10 +57,13 @@
         <div class="section about-me-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-6" style="float:right" >
+                    <div class="col-6" style="float:right" data-sal="slide-left"
+                    data-sal-delay="300"
+                    data-sal-duration="500"
+                    data-sal-easing="ease-out-bounce">
                             <img src="assets/images/my_photo.PNG" alt="myphoto" class="my-photo">
                     </div>
-                    <div class="col-6"  style="float:right">
+                    <div class="col-6"  style="float:right"  data-sal="fade" data-sal-duration="500">
                         <h1>About me</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus et fugit impedit velit omnis
                                 iusto repellat eaque autem iste aliquam

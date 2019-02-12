@@ -1,4 +1,6 @@
 // import {sal} from "sal.js";
+sal();
+
 var technologies=[
         {name:"HTML5",image:"assets/images/html_logo.png"},
         {name:"CSS3",image:"assets/images/css3_logo.png"},
