@@ -7,7 +7,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/grid.css">
-    <link rel="stylesheet" href="css/sal.css">
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -32,7 +31,7 @@
                 <li class="nav-item"><a class="link" href="#home">About me</a></li>
                 <li class="nav-item"><a class="link">Skills</a></li>
                 <li class="nav-item"><a class="link">Projects</a></li>
-                <li class="nav-item"><a class="link">Contact me</a></li>
+                <li class="nav-item"><a class="link" href="#about">Contact me</a></li>
                 <!-- <li class="menu" id="menu-button"><i class="fas fa-bars" style="font-size:35px"></i></li> -->
             </ul>
         </nav>    
@@ -54,7 +53,7 @@
         </div>
       
         <!-- about-me -->
-        <div class="section about-me-section">
+        <div class="section about-me-section" id="about">
             <div class="container">
                 <div class="row">
                     <div class="col-6" style="float:right" data-sal="slide-left"
@@ -89,31 +88,40 @@
         <div class="section" style=" background-color:#fff; color: #707070; padding:  2em 0em;">
                 <div class="sub-container">
                         <h1>Skills and Tecnologies</h1>
-                        <p>This are some of the programing langauges, and tools I know </p>
                         <div class="row">
-                            <div class="col-2">
-                                <img src="assets/images/android_phone.png" style=" width:100%; display: block" alt="">
-                            </div>
-                            <div class="col-4">
+                            <div class="col-4 skill">
+                                <img src="assets/images/android_phone.png" style=" width:50%; display: block; margin:0px auto;" alt="">
                                 <h3 style="font-weight:500">Android Development</h3>
                                 <p>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quia minima, harum repellendus distinctio, 
                                     suscipit eos nobis excepturi rem nostrum provident! Odit in sunt voluptatum atque? Aut quia voluptas rerum?
                                 </p>
                             </div>
-                            <div class="col-2">
-                                    <img src="assets/images/android_phone.png" style=" width:100%; display: block" alt="">
+                            <div class="col-4 skill">
+                                <img src="assets/images/android_phone.png" style=" width:50%; display: block; margin:0px auto;" alt="">
+                                <h3 style="font-weight:500">Android Development</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quia minima, harum repellendus distinctio, 
+                                    suscipit eos nobis excepturi rem nostrum provident! Odit in sunt voluptatum atque? Aut quia voluptas rerum?
+                                </p>
                             </div>
-                            <div class="col-4">
+                            <div class="col-4 skill">
+                                    <img src="assets/images/android_phone.png" style=" width:50%; display: block;margin:0px auto;" alt="">
                                     <h3 style="font-weight:500">Android Development</h3>
                                     <p>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quia minima, harum repellendus distinctio, 
                                         suscipit eos nobis excepturi rem nostrum provident! Odit in sunt voluptatum atque? Aut quia voluptas rerum?
                                     </p>
-                            </div>
+                                </div>
                           
                         </div>
+                        
+                        <div class="row">
+                                <h3 style="font-weight:300; text-align:center">This are some of the programing langauges, and tools I know </h3>
+
+                        </div>
                         <div class="row" id="technologies">
+                            
                             <!-- JAVASCRIPT GOES HERE -->
                           
                         </div>
@@ -122,26 +130,26 @@
         <!-- projects section -->
         <div class="section">
             <div class="container">
+                    <div class="row">
+                          
+                    </div>
                     <div class="row projects">
                         <h1>Projects</h1>
                         <p>This are some projects I work on</p>
                         <div class="col-4 project">
-                            <img src="http://lorempixel.com/200/100/" style="width: 100%" alt="">
-                            <h3>Invemu</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio adipisci magnam enim nesciunt, quod, distinctio voluptatum est cum ducimus consequuntur consequatur dolor, fugiat quae. Veritatis adipisci vero sint est dolore?</p>
-                            <a href="" class="cta-button">More</a>
+                                <img src="/assets/images/invemu.png" style="width: 100%" alt="">
+                                <div class="detail">
+                                    <h3>Invemu</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio adipisci magnam enim nesciunt</p>
+                                    <a href="" class="cta-button">More</a>
+                                </div>
                         </div>
-                        <div class="col-4 project">
-                                <img src="http://lorempixel.com/200/100/" style="width: 100%" alt="">
-                                <h3>Invemu</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio adipisci magnam enim nesciunt, quod, distinctio voluptatum est cum ducimus consequuntur consequatur dolor, fugiat quae. Veritatis adipisci vero sint est dolore?</p>
-                                <a href="" class="cta-button">More</a>
-                        </div>
+                       
                     </div> 
             </div>
-        </div>
+        </div>  
         <!-- contac-me -->
-        <div class="contact-me">
+        <div class="contact-me" id="contact">
                 <div class="sub-container">
                         <h1>Contact me</h1>
                         <p><a href="mailto:hanielHernandez96@outlook.com"> <i class="material-icons">email</i> HanielHernandez96@outlook.com</a>  </p>

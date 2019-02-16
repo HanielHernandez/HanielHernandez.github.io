@@ -74,6 +74,7 @@ a {
   position: fixed;
   z-index: 1;
   color: #ffffff;
+  font-weight: 500;
   background-image: linear-gradient(45deg, rgba(30, 188, 206, 0.8), rgba(32, 121, 210, 0.8));
   padding: 0.75em 3em;
 }
@@ -186,9 +187,10 @@ h1 {
 }
 
 .cta-button {
-  background-color: #39A4EB;
-  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: #2772a3;
+  -webkit-box-shadow: 0 3px 6px 0 rgba(39, 114, 163, 0.5);
+          box-shadow: 0 3px 6px 0 rgba(39, 114, 163, 0.5);
+  border: 5px white;
   border-radius: 50px;
   color: white;
   margin: 16px 0px;
@@ -198,6 +200,14 @@ h1 {
   width: 10em;
   font-weight: 700;
   text-decoration: none;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+  background: #39A4EB;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .hero-section, .about-me-section {
@@ -242,16 +252,25 @@ h1 {
       grid-template-columns: repeat(6, 16.66%);
 }
 
+.skill h3 {
+  text-align: center;
+}
+
+.skill p {
+  text-align: center;
+}
+
 .technology {
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .technology img {
   display: block;
-  margin: 0px auto;
+  margin: 1em auto;
   width: 60%;
-  margin-bottom: 1em;
 }
 
 .technology p {
@@ -270,15 +289,14 @@ h1 {
 }
 
 .projects {
-  padding: 3em 0em;
   color: #fff;
+  padding: 3em 0em;
 }
 
 .project {
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  position: relative;
+  padding: 0em !important;
+  overflow: hidden;
 }
 
 .project h3 {
@@ -288,17 +306,39 @@ h1 {
 }
 
 .project .cta-button {
-  font-size: 16px;
+  padding: 0.75em;
+  font-size: 1em;
 }
 
-.project:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+.project .detail {
+  background: rgba(58, 58, 58, 0.75);
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0em 1em;
+  width: 100%;
+  height: 0;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  text-align: center;
+}
+
+.project .detail p {
+  position: relative;
+  margin: 0.4em 0px;
+}
+
+.project:hover .detail {
+  height: 100%;
+  display: block;
 }
 
 .contact-me {
   background-color: rgba(58, 58, 58, 0.75);
   color: white;
-  padding: 1em;
+  padding: 2em;
 }
 
 .contact-me a {
@@ -320,6 +360,12 @@ h1 {
   width: fit-content;
 }
 
+@media only screen and (max-width: 1280px) {
+  .container {
+    width: 85%;
+  }
+}
+
 @media only screen and (max-width: 850px) {
   /* For mobile phones: */
   #technologies {
@@ -329,8 +375,8 @@ h1 {
   .technolgy {
     width: 25%;
   }
-  .container {
-    width: 85%;
+  .project {
+    width: 50%;
   }
   .cta-button {
     display: block;
