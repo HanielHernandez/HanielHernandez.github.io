@@ -25,6 +25,7 @@ a {
 }
 
 .section {
+  padding-top: 73px;
   width: 100%;
   min-height: 100vh;
 }
@@ -53,7 +54,6 @@ a {
   right: 0;
   top: 0;
   padding: 14px 16px;
-  font-size: 1.1em;
   text-decoration: none;
 }
 
@@ -66,7 +66,7 @@ a {
 
 #normal-menu ul li a:hover {
   display: block;
-  border-bottom: #fff 1px solid;
+  text-decoration: underline;
 }
 
 .dark-menu {
@@ -104,6 +104,8 @@ a {
   color: white;
   display: block;
   text-align: center;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   font-size: 1.25em;
   margin-bottom: 0px;
 }
@@ -186,13 +188,13 @@ h1 {
 }
 
 .cta-button {
-  background-color: #2772a3;
+  background-color: #3594f3;
   -webkit-box-shadow: 0 3px 6px 0 rgba(39, 114, 163, 0.5);
           box-shadow: 0 3px 6px 0 rgba(39, 114, 163, 0.5);
   border: 5px white;
   border-radius: 50px;
   color: white;
-  margin: 16px 0px;
+  margin-top: 16px;
   padding: 0.75em 1.30em;
   font-size: 24px;
   text-align: center;
@@ -204,6 +206,7 @@ h1 {
 }
 
 .cta-button:hover {
+  color: #fff;
   background: #39A4EB;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
@@ -251,7 +254,13 @@ h1 {
       grid-template-columns: repeat(6, 16.66%);
 }
 
+.skill {
+  color: #090909;
+}
+
 .skill h3 {
+  font-family: "Open Sans";
+  font-weight: 500;
   text-align: center;
 }
 
@@ -307,6 +316,8 @@ h1 {
 .project .cta-button {
   padding: 0.75em;
   font-size: 1em;
+  margin: 1em auto !important;
+  text-transform: uppercase;
 }
 
 .project .detail {
@@ -342,7 +353,7 @@ h1 {
 
 .contact-me a {
   color: white;
-  font-size: 24px;
+  font-size: 18px;
   display: inline;
 }
 
@@ -353,7 +364,6 @@ h1 {
 
 .cta-button {
   display: block;
-  margin: 0px auto;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
